@@ -1,3 +1,3 @@
 ## 0.0.1
 
-* Create AppwriteErrorHandling class
+* First version of the package

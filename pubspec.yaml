@@ -1,6 +1,9 @@
 name: appwrite_error_handling
-description: "A new Flutter package project."
+description: "A simple and effective way to handle errors from the Appwrite backend service."
+maintainer: Ryszard Schossler (LynxLynxx)
 version: 0.0.1
+repository: https://github.com/LynxLynxx/appwrite_error_handling/
+issue_tracker: https://github.com/LynxLynxx/appwrite_error_handling/issues
 homepage: "https://rsapps.org/"
 
 environment:

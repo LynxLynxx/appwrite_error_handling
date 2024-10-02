@@ -3,9 +3,7 @@ import 'package:flutter/material.dart';
 
 Future<void> main() async {
   await AppwriteErrorHandling.instance.init(Locale("pl"));
-  print(AppwriteErrorHandling.instance.translations.general_unknown);
   await AppwriteErrorHandling.instance.updateLanguage(Locale('en'));
-  print(AppwriteErrorHandling.instance.translations.general_unknown);
   runApp(const MyApp());
 }
 

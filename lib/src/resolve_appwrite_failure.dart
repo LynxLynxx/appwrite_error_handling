@@ -2,7 +2,7 @@ part of 'error_handlers.dart';
 
 @visibleForTesting
 AppwriteFailure resolveAppwriteFailure(AppwriteException e) {
-  final translations = AppwriteErrorHandling.instance.translations;
+  final translations = AppwriteErrorHandling.instance.appLocalizations;
 
   switch (e.type) {
     case "general_mock":

@@ -116,8 +116,10 @@ AppwriteFailure resolveAppwriteFailure(AppwriteException e) {
     case "user_session_already_exists":
       return AppwriteFailure(translations.user_session_already_exists, e);
     case "user_unauthorized":
+      AppwriteErrorHandling.instance.streamController.add(true);
       return AppwriteFailure(translations.user_unauthorized, e);
     case "user_oauth2_unauthorized":
+      AppwriteErrorHandling.instance.streamController.add(true);
       return AppwriteFailure(translations.user_oauth2_unauthorized, e);
     case "team_invalid_secret":
       return AppwriteFailure(translations.team_invalid_secret, e);

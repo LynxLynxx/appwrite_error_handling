@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
@@ -12,6 +13,9 @@ class AppwriteErrorHandling {
 
   /// The instance of `AppLocalizations` containing the localized strings.
   late AppLocalizations appLocalizations;
+  late StreamController<bool> streamController;
+
+  Stream<bool> get stream => streamController.stream;
 
   AppwriteErrorHandling._();
 
@@ -28,6 +32,7 @@ class AppwriteErrorHandling {
   /// If no [locale] is provided, it defaults to the `en` locale.
   /// This method must be called before accessing `appLocalizations`.
   Future<void> init(Locale? locale) async {
+    streamController = StreamController<bool>();
     appLocalizations =
         await AppLocalizations.delegate.load(locale ?? Locale("en"));
     log("AppwriteErrorHandling AppLocalizations with locale: $locale, ${appLocalizations.general_unknown}");

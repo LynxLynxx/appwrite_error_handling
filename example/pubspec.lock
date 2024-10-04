@@ -2,7 +2,7 @@
 # See https://dart.dev/tools/pub/glossary#lockfile
 packages:
   appwrite:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: appwrite
       sha256: "0d12a8aa778e4748de068bcdacda7adca181b888b14c698389b7b03364526a10"
@@ -81,7 +81,7 @@ packages:
     source: hosted
     version: "1.0.8"
   dartz:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: dartz
       sha256: e6acf34ad2e31b1eb00948692468c30ab48ac8250e0f0df661e29f12dd252168

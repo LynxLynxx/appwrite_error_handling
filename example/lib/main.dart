@@ -1,5 +1,73 @@
+import 'package:appwrite/appwrite.dart' as appwrite;
 import 'package:appwrite_error_handling/appwrite_error_handling.dart';
+import 'package:appwrite_error_handling/src/appwrite_failures.dart';
+import 'package:dartz/dartz.dart' as dartz;
 import 'package:flutter/material.dart';
+
+//class Todo
+class Todo {
+  final String? $id;
+  final String? title;
+  final String? description;
+  final String? status;
+  final String? createdAt;
+  final String? updatedAt;
+
+  Todo({
+    this.$id,
+    this.title,
+    this.description,
+    this.status,
+    this.createdAt,
+    this.updatedAt,
+  });
+
+  factory Todo.fromJson(Map<String, dynamic> json) => Todo(
+        $id: json['\$id'],
+        title: json['title'],
+        description: json['description'],
+        status: json['status'],
+        createdAt: json['\$createdAt'],
+        updatedAt: json['\$updatedAt'],
+      );
+
+  Map<String, dynamic> toJson() => {
+        '\$id': $id,
+        'title': title,
+        'description': description,
+        'status': status,
+      };
+}
+
+//Datasource class
+class DataSource {
+  final databases = appwrite.Databases(appwrite.Client());
+  Future<List<Todo>> getTodos() async {
+    final todos = await databases.listDocuments(
+      databaseId: '<DATABASE_ID>',
+      collectionId: '[COLLECTION_ID]',
+    );
+    return todos.documents.map((e) => Todo.fromJson(e.data)).toList();
+  }
+}
+
+//Repository class
+class Repository {
+  final DataSource dataSource = DataSource();
+  Future<dartz.Either<AppwriteFailure, List<Todo>>> getTodos() async {
+    return await handleResponse(() async {
+      return await DataSource().getTodos();
+    });
+  }
+}
+
+//Usecase
+class UseCase {
+  final Repository repository = Repository();
+  Future<dartz.Either<AppwriteFailure, List<Todo>>> getTodos() async {
+    return await repository.getTodos();
+  }
+}
 
 Future<void> main() async {
   await AppwriteErrorHandling.instance.init(const Locale("pl"));
@@ -10,27 +78,11 @@ Future<void> main() async {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // TRY THIS: Try running your application with "flutter run". You'll see
-        // the application has a purple toolbar. Then, without quitting the app,
-        // try changing the seedColor in the colorScheme below to Colors.green
-        // and then invoke "hot reload" (save your changes or press the "hot
-        // reload" button in a Flutter-supported IDE, or press "r" if you used
-        // the command line to start the app).
-        //
-        // Notice that the counter didn't reset back to zero; the application
-        // state is not lost during the reload. To reset the state, use hot
-        // restart instead.
-        //
-        // This works for code too, not just values: Most code changes can be
-        // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
@@ -42,15 +94,6 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
-
   final String title;
 
   @override
@@ -58,71 +101,39 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  final UseCase useCase = UseCase();
+  String text = '';
 
-  void _incrementCounter() {
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _getTodos();
+  }
+
+  _getTodos() async {
+    final result = await useCase.getTodos();
     setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
+      text = result.fold(
+        (failure) => failure.translation,
+        (todos) => "TODOS ARE HERE, U can use them",
+      );
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(
-        // TRY THIS: Try changing the color here to a specific color (to
-        // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
-        // change color while the other colors stay the same.
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
+      body: const Center(
         child: Column(
-          // Column is also a layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
-          //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
-          //
-          // TRY THIS: Invoke "debug painting" (choose the "Toggle Debug Paint"
-          // action in the IDE, or press "p" in the console), to see the
-          // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
+          children: <Widget>[],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }

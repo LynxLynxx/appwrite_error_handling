@@ -36,8 +36,11 @@ To handle errors in your code, you can use `handleResponse` function. or `handle
 /// in datasource class 
 class DataSource {
     List<Todo> getTodos() async {
-       final response =  dio.get("/todos");
-       return Todo.fromJson(response.data);
+       final todos = await databases.listDocuments(
+            databaseId: '<DATABASE_ID>',
+            collectionId: '[COLLECTION_ID]',
+        );
+        return todos.documents.map((e) => Todo.fromJson(e.data)).toList();
     }
 }
 

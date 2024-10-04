@@ -2,8 +2,8 @@ import 'package:appwrite_error_handling/appwrite_error_handling.dart';
 import 'package:flutter/material.dart';
 
 Future<void> main() async {
-  await AppwriteErrorHandling.instance.init(Locale("pl"));
-  await AppwriteErrorHandling.instance.updateLanguage(Locale('en'));
+  await AppwriteErrorHandling.instance.init(const Locale("pl"));
+  await AppwriteErrorHandling.instance.updateLanguage(const Locale('en'));
   runApp(const MyApp());
 }
 

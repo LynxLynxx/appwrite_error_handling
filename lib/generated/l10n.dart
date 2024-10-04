@@ -50,11 +50,11 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `Hello World!`
-  String get hi {
+  /// `Unknown error occurred`
+  String get unknown_error {
     return Intl.message(
-      'Hello World!',
-      name: 'hi',
+      'Unknown error occurred',
+      name: 'unknown_error',
       desc: '',
       args: [],
     );
@@ -1379,6 +1379,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Sorry, there was an error processing your request. It seems that an object couldn't be transformed into the expected class or model. Please check your input and try again`
+  String get typeError {
+    return Intl.message(
+      'Sorry, there was an error processing your request. It seems that an object couldn\'t be transformed into the expected class or model. Please check your input and try again',
+      name: 'typeError',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
@@ -1387,7 +1397,15 @@ class AppLocalizationDelegate extends LocalizationsDelegate<S> {
   List<Locale> get supportedLocales {
     return const <Locale>[
       Locale.fromSubtags(languageCode: 'en'),
+      Locale.fromSubtags(languageCode: 'ar'),
+      Locale.fromSubtags(languageCode: 'bn'),
+      Locale.fromSubtags(languageCode: 'de'),
+      Locale.fromSubtags(languageCode: 'es'),
+      Locale.fromSubtags(languageCode: 'fr'),
       Locale.fromSubtags(languageCode: 'pl'),
+      Locale.fromSubtags(languageCode: 'pt'),
+      Locale.fromSubtags(languageCode: 'ru'),
+      Locale.fromSubtags(languageCode: 'zh'),
     ];
   }
 

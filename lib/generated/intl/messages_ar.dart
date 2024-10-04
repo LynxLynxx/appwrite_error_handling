@@ -1,5 +1,5 @@
 // DO NOT EDIT. This is code generated via package:intl/generate_localized.dart
-// This is a library that provides messages for a en locale. All the
+// This is a library that provides messages for a ar locale. All the
 // messages from the main program should be duplicated here with the same
 // function name.
 
@@ -18,131 +18,131 @@ final messages = new MessageLookup();
 typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 
 class MessageLookup extends MessageLookupByLibrary {
-  String get localeName => 'en';
+  String get localeName => 'ar';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "attribute_already_exists": MessageLookupByLibrary.simpleMessage(
-            "Attribute with the requested ID already exists. Try again with a different ID or use unique() to generate a unique ID"),
+            "سمة بالمعرف المطلوب موجودة بالفعل. حاول مرة أخرى باستخدام معرف مختلف أو استخدم unique() لإنشاء معرف فريد"),
         "attribute_default_unsupported": MessageLookupByLibrary.simpleMessage(
-            "Default values cannot be set for array or required attributes"),
+            "لا يمكن تعيين قيم افتراضية للمصفوفة أو السمات المطلوبة"),
         "attribute_format_unsupported": MessageLookupByLibrary.simpleMessage(
-            "The requested attribute format is not supported"),
+            "تنسيق السمة المطلوب غير مدعوم"),
         "attribute_limit_exceeded": MessageLookupByLibrary.simpleMessage(
-            "The maximum number of attributes has been reached"),
+            "تم الوصول إلى الحد الأقصى لعدد السمات"),
         "attribute_not_available": MessageLookupByLibrary.simpleMessage(
-            "The requested attribute is not yet available. Please try again later"),
+            "السمة المطلوبة غير متوفرة بعد. يرجى المحاولة مرة أخرى لاحقًا"),
         "attribute_not_found": MessageLookupByLibrary.simpleMessage(
-            "Attribute with the requested ID could not be found"),
-        "attribute_type_invalid": MessageLookupByLibrary.simpleMessage(
-            "The attribute type is invalid"),
+            "لم يتم العثور على سمة بالمعرف المطلوب"),
+        "attribute_type_invalid":
+            MessageLookupByLibrary.simpleMessage("نوع السمة غير صالح"),
         "attribute_unknown": MessageLookupByLibrary.simpleMessage(
-            "The attribute required for the index could not be found. Please confirm all your attributes are in the available state"),
+            "لم يتم العثور على السمة المطلوبة للمؤشر. يرجى تأكيد أن جميع سماتك في حالة متاحة"),
         "attribute_value_invalid": MessageLookupByLibrary.simpleMessage(
-            "The attribute value is invalid. Please check the type, range and value of the attribute"),
+            "قيمة السمة غير صالحة. يرجى التحقق من نوع ومجال وقيمة السمة"),
         "avatar_icon_not_found": MessageLookupByLibrary.simpleMessage(
-            "The requested favicon could not be found"),
+            "لم يتم العثور على الرمز المطلوب"),
         "avatar_image_not_found": MessageLookupByLibrary.simpleMessage(
-            "The requested image was not found at the URL"),
+            "لم يتم العثور على الصورة المطلوبة في عنوان URL"),
         "avatar_not_found": MessageLookupByLibrary.simpleMessage(
-            "The request avatar could not be found"),
+            "لم يتم العثور على الصورة الرمزية المطلوبة"),
         "avatar_remote_url_failed": MessageLookupByLibrary.simpleMessage(
-            "Failed to fetch favicon from the requested URL"),
+            "فشل في جلب الرمز من عنوان URL المطلوب"),
         "avatar_set_not_found": MessageLookupByLibrary.simpleMessage(
-            "The requested avatar set could not be found"),
+            "لم يتم العثور على مجموعة الصور الرمزية المطلوبة"),
         "build_in_progress": MessageLookupByLibrary.simpleMessage(
-            "Build with the requested ID is already in progress. Please wait before you can retry"),
+            "البنية ذات المعرف المطلوب قيد التقدم بالفعل. يرجى الانتظار قبل أن تتمكن من إعادة المحاولة"),
         "build_not_found": MessageLookupByLibrary.simpleMessage(
-            "Build with the requested ID could not be found"),
+            "لم يتم العثور على البنية بمعرف المطلوب"),
         "build_not_ready": MessageLookupByLibrary.simpleMessage(
-            "Build with the requested ID is building and not ready for execution"),
+            "البنية ذات المعرف المطلوب قيد البناء وليست جاهزة للتنفيذ"),
         "collection_already_exists": MessageLookupByLibrary.simpleMessage(
-            "A collection with the requested ID already exists. Try again with a different ID or use unique() to generate a unique ID"),
+            "مجموعة بالمعرف المطلوب موجودة بالفعل. حاول مرة أخرى باستخدام معرف مختلف أو استخدم unique() لإنشاء معرف فريد"),
         "collection_limit_exceeded": MessageLookupByLibrary.simpleMessage(
-            "The maximum number of collections has been reached"),
+            "تم الوصول إلى الحد الأقصى لعدد المجموعات"),
         "collection_not_found": MessageLookupByLibrary.simpleMessage(
-            "Collection with the requested ID could not be found"),
-        "database_already_exists":
-            MessageLookupByLibrary.simpleMessage("Database already exists"),
+            "لم يتم العثور على مجموعة بالمعرف المطلوب"),
+        "database_already_exists": MessageLookupByLibrary.simpleMessage(
+            "قاعدة البيانات موجودة بالفعل"),
         "database_not_found":
-            MessageLookupByLibrary.simpleMessage("Database not found"),
+            MessageLookupByLibrary.simpleMessage("قاعدة البيانات غير موجودة"),
         "deployment_not_found": MessageLookupByLibrary.simpleMessage(
-            "Deployment with the requested ID could not be found"),
+            "لم يتم العثور على النشر بمعرف المطلوب"),
         "document_already_exists": MessageLookupByLibrary.simpleMessage(
-            "Document with the requested ID already exists. Try again with a different ID or use unique() to generate a unique ID"),
+            "مستند بالمعرف المطلوب موجود بالفعل. حاول مرة أخرى باستخدام معرف مختلف أو استخدم unique() لإنشاء معرف فريد"),
         "document_delete_restricted": MessageLookupByLibrary.simpleMessage(
-            "Document cannot be deleted because it is referenced by another document"),
+            "لا يمكن حذف المستند لأنه يشير إليه مستند آخر"),
         "document_invalid_structure": MessageLookupByLibrary.simpleMessage(
-            "The document structure is invalid. Please ensure the attributes match the collection definition"),
+            "هيكل المستند غير صالح. يرجى التأكد من أن السمات تتطابق مع تعريف المجموعة"),
         "document_missing_data": MessageLookupByLibrary.simpleMessage(
-            "The document data is missing. Try again with document data populated"),
+            "بيانات المستند مفقودة. أعد المحاولة مع ملء بيانات المستند"),
         "document_missing_payload": MessageLookupByLibrary.simpleMessage(
-            "The document data and permissions are missing. You must provide either document data or permissions to be updated"),
+            "بيانات المستند والأذونات مفقودة. يجب تقديم بيانات المستند أو أذونات للتحديث"),
         "document_not_found": MessageLookupByLibrary.simpleMessage(
-            "Document with the requested ID could not be found"),
+            "لم يتم العثور على مستند بالمعرف المطلوب"),
         "document_update_conflict": MessageLookupByLibrary.simpleMessage(
-            "Remote document is newer than local"),
+            "المستند البعيد أحدث من المستند المحلي"),
         "execution_not_found": MessageLookupByLibrary.simpleMessage(
-            "Execution with the requested ID could not be found"),
+            "لم يتم العثور على التنفيذ بالمعرف المطلوب"),
         "function_entrypoint_missing": MessageLookupByLibrary.simpleMessage(
-            "Entrypoint for your Appwrite Function is missing. Please specify it when making deployment or update the entrypoint under your function\'s Settings > Configuration > Entrypoint"),
+            "نقطة الدخول لوظيفة Appwrite مفقودة. يرجى تحديدها عند إجراء النشر أو تحديث نقطة الدخول تحت إعدادات الوظيفة > التكوين > نقطة الدخول"),
         "function_not_found": MessageLookupByLibrary.simpleMessage(
-            "Function with the requested ID could not be found"),
+            "لم يتم العثور على دالة بمعرف المطلوب"),
         "function_runtime_unsupported": MessageLookupByLibrary.simpleMessage(
-            "The requested runtime is either inactive or unsupported. Please check the value of the _APP_FUNCTIONS_RUNTIMES environment variable"),
+            "وقت التشغيل المطلوب غير نشط أو غير مدعوم. يرجى التحقق من قيمة متغير البيئة _APP_FUNCTIONS_RUNTIMES"),
         "general_access_forbidden": MessageLookupByLibrary.simpleMessage(
-            "Access to this API is forbidden"),
+            "ممنوع الوصول إلى هذه الواجهة. راجع وثائق OAuth"),
         "general_argument_invalid": MessageLookupByLibrary.simpleMessage(
-            "The request contains one or more invalid arguments. Please refer to the endpoint documentation"),
+            "يحتوي الطلب على وسيطة واحدة أو أكثر غير صالحة. يرجى الرجوع إلى وثائق نقطة النهاية"),
         "general_codes_disabled": MessageLookupByLibrary.simpleMessage(
-            "Invitation codes are disabled on this server. Please contact the server administrator"),
+            "رموز الدعوة معطلة على هذا الخادم. يرجى الاتصال بمسؤول الخادم"),
         "general_cursor_not_found": MessageLookupByLibrary.simpleMessage(
-            "The cursor is invalid. This can happen if the item represented by the cursor has been deleted"),
+            "المؤشر غير صالح. يمكن أن يحدث هذا إذا تم حذف العنصر الذي يمثله المؤشر"),
         "general_mock": MessageLookupByLibrary.simpleMessage(
-            "General errors thrown by the mock controller used for testing"),
+            "أخطاء عامة طرحها وحدة تحكم وهمية مستخدمة للاختبار"),
         "general_not_implemented": MessageLookupByLibrary.simpleMessage(
-            "This method was not fully implemented yet. If you believe this is a mistake, please upgrade your Appwrite server version"),
+            "لم يتم تنفيذ هذه الطريقة بالكامل بعد. إذا كنت تعتقد أن هذا خطأ، فيرجى ترقية إصدار خادم Appwrite الخاص بك"),
         "general_phone_disabled": MessageLookupByLibrary.simpleMessage(
             "Phone provider is not configured. Please check the _APP_SMS_PROVIDER environment variable of your Appwrite server"),
         "general_protocol_unsupported": MessageLookupByLibrary.simpleMessage(
-            "The request cannot be fulfilled with the current protocol. Please check the value of the _APP_OPTIONS_FORCE_HTTPS environment variable"),
+            "لا يمكن تلبيت الطلب بالبروتوكول الحالي. يرجى التحقق من قيمة متغير بيئة _APP_OPTIONS_FORCE_HTTPS"),
         "general_provider_failure": MessageLookupByLibrary.simpleMessage(
-            "VCS (Version Control System) provider failed to process the request. We believe this is an error with the VCS provider. Try again, or contact support for more information"),
+            "فشلت موفر VCS (نظام التحكم في الإصدارات) في معالجة الطلب. نعتقد أن هذا خطأ مع موفر VCS. حاول مرة أخرى، أو اتصل بالدعم للحصول على مزيد من المعلومات"),
         "general_query_invalid": MessageLookupByLibrary.simpleMessage(
-            "The query\'s syntax is invalid. Please check the query and try again"),
+            "بنية الاستعلام غير صالحة. يرجى التحقق من الاستعلام وإعادة المحاولة"),
         "general_query_limit_exceeded": MessageLookupByLibrary.simpleMessage(
-            "Query limit exceeded for the current attribute. Usage of more than 100 query values on a single attribute is prohibited"),
+            "تم تجاوز حد الاستعلام للسمة الحالية. يُحظر استخدام أكثر من 100 قيمة استعلام على سمة واحدة"),
         "general_rate_limit_exceeded": MessageLookupByLibrary.simpleMessage(
-            "Rate limit for the current endpoint has been exceeded. Please try again after some time"),
+            "تم تجاوز حد المعدل لنقطة النهاية الحالية. يرجى المحاولة مرة أخرى بعد بعض الوقت"),
         "general_route_not_found": MessageLookupByLibrary.simpleMessage(
-            "The requested route was not found. Please refer to the API docs and try again"),
-        "general_server_error": MessageLookupByLibrary.simpleMessage(
-            "An internal server error occurred"),
+            "لم يتم العثور على الطريق المطلوب. يرجى الرجوع إلى وثائق API وإعادة المحاولة"),
+        "general_server_error":
+            MessageLookupByLibrary.simpleMessage("حدث خطأ داخلي في الخادم"),
         "general_service_disabled": MessageLookupByLibrary.simpleMessage(
             "The requested service is disabled. You can enable the service from the Appwrite console"),
         "general_smtp_disabled": MessageLookupByLibrary.simpleMessage(
             "SMTP is disabled on your Appwrite instance. You can learn more about setting up SMTP in our docs"),
         "general_unauthorized_scope": MessageLookupByLibrary.simpleMessage(
-            "The current user or API key does not have the required scopes to access the requested resource"),
+            "لا يمتلك مستخدم API الحالي أو مفتاح API النطاقات المطلوبة للوصول إلى المورد المطلوب"),
         "general_unknown": MessageLookupByLibrary.simpleMessage(
-            "An unknown error has occurred. Please check the logs for more information"),
+            "حدث خطأ غير معروف. يرجى التحقق من السجلات للحصول على مزيد من المعلومات"),
         "general_unknown_origin": MessageLookupByLibrary.simpleMessage(
-            "The request originated from an unknown origin. If you trust this domain, please list it as a trusted platform in the Appwrite console"),
+            "نشأ الطلب من أصل غير معروف. إذا كنت تثق في هذا المجال، فيرجى إدراجه كمنصة موثوقة في لوحة تحكم Appwrite"),
         "general_usage_disabled": MessageLookupByLibrary.simpleMessage(
             "Usage stats are not configured. Please check the value of the _APP_USAGE_STATS environment variable of your Appwrite server"),
         "index_already_exists": MessageLookupByLibrary.simpleMessage(
-            "Index with the requested ID already exists. Try again with a different ID or use unique() to generate a unique ID"),
-        "index_invalid": MessageLookupByLibrary.simpleMessage("Index invalid"),
+            "مؤشر بالمعرف المطلوب موجود بالفعل. حاول مرة أخرى باستخدام معرف مختلف أو استخدم unique() لإنشاء معرف فريد"),
+        "index_invalid": MessageLookupByLibrary.simpleMessage("مؤشر غير صالح"),
         "index_limit_exceeded": MessageLookupByLibrary.simpleMessage(
-            "The maximum number of indexes has been reached"),
+            "تم الوصول إلى الحد الأقصى لعدد المؤشرات"),
         "index_not_found": MessageLookupByLibrary.simpleMessage(
-            "Index with the requested ID could not be found"),
+            "لم يتم العثور على مؤشر بالمعرف المطلوب"),
         "installation_not_found": MessageLookupByLibrary.simpleMessage(
-            "Installation with the requested ID could not be found. Check to see if the ID is correct, or create the installation"),
+            "التثبيت بمعرف المطلوب لم يتم العثور عليه. تحقق لمعرفة ما إذا كان المعرف صحيحًا ، أو قم بإنشاء التثبيت"),
         "key_not_found": MessageLookupByLibrary.simpleMessage(
-            "Key with the requested ID could not be found"),
-        "membership_already_confirmed": MessageLookupByLibrary.simpleMessage(
-            "Membership is already confirmed"),
+            "لم يتم العثور على المفتاح باستخدام المعرف المطلوب"),
+        "membership_already_confirmed":
+            MessageLookupByLibrary.simpleMessage("عضوية مؤكدة بالفعل"),
         "membership_not_found": MessageLookupByLibrary.simpleMessage(
             "Membership with the requested ID could not be found"),
         "password_personal_data": MessageLookupByLibrary.simpleMessage(
@@ -150,73 +150,73 @@ class MessageLookup extends MessageLookupByLibrary {
         "password_recently_used": MessageLookupByLibrary.simpleMessage(
             "The password you are trying to use is similar to your previous password. For your security, please choose a different password and try again"),
         "platform_not_found": MessageLookupByLibrary.simpleMessage(
-            "Platform with the requested ID could not be found"),
+            "لم يتم العثور على منصة باستخدام المعرف المطلوب"),
         "project_already_exists": MessageLookupByLibrary.simpleMessage(
-            "Project with the requested ID already exists. Try again with a different ID or use unique() to generate a unique ID"),
+            "المشروع الذي يحتوي على المعرف المطلوب موجود بالفعل. حاول مرة أخرى باستخدام معرف مختلف أو استخدم unique() لإنشاء معرف فريد"),
         "project_invalid_failure_url": MessageLookupByLibrary.simpleMessage(
-            "Invalid redirect URL for OAuth failure"),
+            "عنوان URL لإعادة توجيه غير صالح لفشل OAuth"),
         "project_invalid_success_url": MessageLookupByLibrary.simpleMessage(
-            "Invalid redirect URL for OAuth success"),
+            "عنوان URL لإعادة توجيه غير صالح لنجاح OAuth"),
         "project_key_expired": MessageLookupByLibrary.simpleMessage(
-            "The project key has expired. Please generate a new key using the Appwrite console"),
+            "انتهت صلاحية مفتاح المشروع. يرجى إنشاء مفتاح جديد باستخدام لوحة تحكم Appwrite"),
         "project_not_found": MessageLookupByLibrary.simpleMessage(
-            "Project with the requested ID could not be found. Please check the value of the X-Appwrite-Project header to ensure the correct project ID is being used"),
+            "لم يتم العثور على مشروع باستخدام المعرف المطلوب. يرجى التحقق من قيمة رأس X-Appwrite-Project للتأكد من استخدام معرف المشروع الصحيح"),
         "project_provider_disabled": MessageLookupByLibrary.simpleMessage(
-            "The chosen OAuth provider is disabled. You can enable the OAuth provider using the Appwrite console"),
+            "تم تعطيل موفر OAuth المحدد. يمكنك تمكين موفر OAuth باستخدام لوحة تحكم Appwrite"),
         "project_provider_unsupported": MessageLookupByLibrary.simpleMessage(
             "The chosen OAuth provider is unsupported. Please check the Create OAuth2 Session docs for the complete list of supported OAuth providers"),
         "project_reserved_project": MessageLookupByLibrary.simpleMessage(
-            "The project ID is reserved. Please choose another project ID"),
+            "معرّف المشروع محجوز. يرجى اختيار معرف مشروع آخر"),
         "project_smtp_config_invalid": MessageLookupByLibrary.simpleMessage(
-            "Provided SMTP config is invalid. Please check the configured values and try again"),
+            "تكوين SMTP المقدم غير صالح. يرجى التحقق من القيم المكونة وإعادة المحاولة"),
         "project_template_default_deletion": MessageLookupByLibrary.simpleMessage(
-            "You can\'t delete default template. If you are trying to reset your template changes, you can ignore this error as it\'s already been reset"),
+            "لا يمكنك حذف القالب الافتراضي. إذا كنت تحاول إعادة تعيين تغييرات القالب، فيمكنك تجاهل هذا الخطأ لأنه قد تم إعادة تعيينه بالفعل"),
         "project_unknown": MessageLookupByLibrary.simpleMessage(
-            "The project ID is either missing or not valid. Please check the value of the X-Appwrite-Project header to ensure the correct project ID is being used"),
+            "معرّف المشروع مفقود أو غير صالح. يرجى التحقق من قيمة رأس X-Appwrite-Project للتأكد من استخدام معرف المشروع الصحيح"),
         "provider_contribution_conflict": MessageLookupByLibrary.simpleMessage(
-            "External contribution is already authorized"),
+            "المساهمة الخارجية مصرح بها بالفعل"),
         "provider_repository_not_found": MessageLookupByLibrary.simpleMessage(
-            "VCS (Version Control System) repository with the requested ID could not be found. Check to see if the ID is correct, and if it belongs to installationId you provided"),
+            "لم يتم العثور على مستودع VCS (نظام التحكم في الإصدارات) بمعرف المطلوب. تحقق لمعرفة ما إذا كان المعرف صحيحًا ، وإذا كان ينتمي إلى installationId الذي قدمته"),
         "repository_not_found": MessageLookupByLibrary.simpleMessage(
-            "Repository with the requested ID could not be found. Check to see if the ID is correct, or create the repository"),
+            "لم يتم العثور على المستودع بمعرف المطلوب. تحقق لمعرفة ما إذا كان المعرف صحيحًا ، أو قم بإنشاء المستودع"),
         "router_domain_not_configured": MessageLookupByLibrary.simpleMessage(
             "_APP_DOMAIN, _APP_DOMAIN_TARGET, and _APP_DOMAIN_FUNCTIONS environment variables have not been configured. Please configure the domain environment variables before accessing the Appwrite Console via any IP address or hostname other than localhost. This value could be an IP like 203.0.113.0 or a hostname like example.com"),
         "router_host_not_found": MessageLookupByLibrary.simpleMessage(
-            "Host is not trusted. This could occur because you have not configured a custom domain. Add a custom domain to your project first and try again"),
+            "المضيف غير موثوق به. قد يحدث هذا لأنك لم تقم بتكوين مجال مخصص. أضف مجالًا مخصصًا إلى مشروعك أولاً، ثم حاول مرة أخرى"),
         "rule_already_exists": MessageLookupByLibrary.simpleMessage(
-            "Domain is already used. Please try again with a different domain"),
+            "يتم استخدام النطاق بالفعل. يرجى المحاولة مرة أخرى باستخدام مجال مختلف"),
         "rule_not_found": MessageLookupByLibrary.simpleMessage(
-            "Rule with the requested ID could not be found. Please check if the ID provided is correct or if the rule actually exists"),
+            "لم يتم العثور على قاعدة باستخدام المعرف المطلوب. يرجى التحقق مما إذا كان المعرف المقدم صحيحًا أو إذا كانت القاعدة موجودة بالفعل"),
         "rule_resource_not_found": MessageLookupByLibrary.simpleMessage(
-            "Resource could not be found. Please check if the resourceId and resourceType are correct, or if the resource actually exists"),
+            "لم يتم العثور على المورد. يرجى التحقق مما إذا كان resourceId و resourceType صحيحين، أو إذا كان المورد موجودًا بالفعل"),
         "rule_verification_failed": MessageLookupByLibrary.simpleMessage(
-            "Domain verification failed. Please check if your DNS records are correct and try again"),
+            "فشلت عملية التحقق من النطاق. يرجى التحقق مما إذا كانت سجلات DNS صحيحة وإعادة المحاولة"),
         "storage_bucket_already_exists": MessageLookupByLibrary.simpleMessage(
-            "A storage bucket with the requested ID already exists. Try again with a different ID or use unique() to generate a unique ID"),
+            "دلو التخزين بمعرف المطلوب موجود بالفعل. حاول مرة أخرى بمعرف مختلف أو استخدم unique() لإنشاء معرف فريد"),
         "storage_bucket_not_found": MessageLookupByLibrary.simpleMessage(
-            "Storage bucket with the requested ID could not be found"),
+            "لم يتم العثور على دلو التخزين بالمعرف المطلوب"),
         "storage_device_not_found": MessageLookupByLibrary.simpleMessage(
-            "The requested storage device could not be found"),
+            "لم يتم العثور على جهاز التخزين المطلوب"),
         "storage_file_already_exists": MessageLookupByLibrary.simpleMessage(
-            "A storage file with the requested ID already exists"),
+            "ملف التخزين بمعرف المطلوب موجود بالفعل"),
         "storage_file_empty": MessageLookupByLibrary.simpleMessage(
-            "Empty file passed to the endpoint"),
+            "تم تمرير ملف فارغ إلى نقطة النهاية"),
         "storage_file_not_found": MessageLookupByLibrary.simpleMessage(
-            "The requested file could not be found"),
+            "لم يتم العثور على الملف المطلوب"),
         "storage_file_type_unsupported": MessageLookupByLibrary.simpleMessage(
-            "The given file extension is not supported"),
+            "امتداد الملف المعطى غير مدعوم"),
         "storage_invalid_appwrite_id": MessageLookupByLibrary.simpleMessage(
-            "The value for x-appwrite-id header is invalid. Please check the value of the x-appwrite-id header is a valid ID and not unique()"),
+            "قيمة رأس x-appwrite-id غير صالحة. يرجى التحقق من أن قيمة رأس x-appwrite-id معرف صالح وليس unique()"),
         "storage_invalid_content_range": MessageLookupByLibrary.simpleMessage(
-            "The content range is invalid. Please check the value of the Content-Range header"),
+            "نطاق المحتوى غير صالح. يرجى التحقق من قيمة رأس Content-Range"),
         "storage_invalid_file": MessageLookupByLibrary.simpleMessage(
-            "The uploaded file is invalid. Please check the file and try again"),
+            "الملف الذي تم تحميله غير صالح. يرجى التحقق من الملف وإعادة المحاولة"),
         "storage_invalid_file_size": MessageLookupByLibrary.simpleMessage(
-            "The file size is either not valid or exceeds the maximum allowed size. Please check the file or the value of the _APP_STORAGE_LIMIT environment variable"),
+            "حجم الملف إما غير صالح أو يتجاوز الحد الأقصى المسموح به. يرجى التحقق من الملف أو قيمة متغير بيئة _APP_STORAGE_LIMIT"),
         "storage_invalid_range": MessageLookupByLibrary.simpleMessage(
-            "The requested range is not satisfactory. Please check the value of the Range header"),
+            "النطاق المطلوب غير مرضي. يرجى التحقق من قيمة رأس المدى"),
         "team_already_exists": MessageLookupByLibrary.simpleMessage(
-            "Team with the requested ID already exists. Please choose a different ID and try again"),
+            "فريق مع معرف المطلوب موجود بالفعل. الرجاء اختيار معرف مختلف وإعادة المحاولة"),
         "team_invalid_secret": MessageLookupByLibrary.simpleMessage(
             "The team invitation secret is invalid. Please request a new invitation and try again"),
         "team_invite_already_exists": MessageLookupByLibrary.simpleMessage(
@@ -230,20 +230,20 @@ class MessageLookup extends MessageLookupByLibrary {
         "team_not_found": MessageLookupByLibrary.simpleMessage(
             "Team with the requested ID could not be found"),
         "typeError": MessageLookupByLibrary.simpleMessage(
-            "Sorry, there was an error processing your request. It seems that an object couldn\'t be transformed into the expected class or model. Please check your input and try again"),
+            "عفواً، حدث خطأ أثناء معالجة طلبك. يبدو أن الكائن لا يمكن تحويله إلى النوع أو النموذج المتوقع. يرجى التحقق من إدخالك والمحاولة مرة أخرى."),
         "unknown_error":
-            MessageLookupByLibrary.simpleMessage("Unknown error occurred"),
+            MessageLookupByLibrary.simpleMessage("حدث خطأ غير معروف"),
         "user_already_exists": MessageLookupByLibrary.simpleMessage(
             "A user with the same id, email, or phone already exists in this project"),
         "user_anonymous_console_prohibited":
             MessageLookupByLibrary.simpleMessage(
                 "Anonymous users cannot be created for the console project"),
         "user_auth_method_unsupported": MessageLookupByLibrary.simpleMessage(
-            "The requested authentication method is either disabled or unsupported. Please check the supported authentication methods in the Appwrite console"),
+            "طريقة المصادقة المطلوبة إما معطلة أو غير مدعومة. يرجى التحقق من طرق المصادقة المدعومة في وحدة تحكم Appwrite"),
         "user_blocked": MessageLookupByLibrary.simpleMessage(
             "The current user has been blocked. You can unblock the user by making a request to the User API\'s Update User Status endpoint or in the Appwrite Console\'s Auth section"),
         "user_count_exceeded": MessageLookupByLibrary.simpleMessage(
-            "The current project has exceeded the maximum number of users. Please check your user limit in the Appwrite console"),
+            "لقد تجاوز المشروع الحالي الحد الأقصى لعدد المستخدمين. يرجى التحقق من حد المستخدمين في وحدة التحكم Appwrite."),
         "user_email_already_exists": MessageLookupByLibrary.simpleMessage(
             "A user with the same email already exists in the current project"),
         "user_email_not_whitelisted": MessageLookupByLibrary.simpleMessage(
@@ -267,13 +267,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "user_oauth2_bad_request": MessageLookupByLibrary.simpleMessage(
             "OAuth2 provider rejected the bad request"),
         "user_oauth2_provider_error": MessageLookupByLibrary.simpleMessage(
-            "OAuth2 provider returned some error"),
+            "مقدم OAuth2 أرجع بعض الأخطاء"),
         "user_oauth2_unauthorized": MessageLookupByLibrary.simpleMessage(
             "OAuth2 provider rejected the unauthorized request"),
         "user_password_mismatch": MessageLookupByLibrary.simpleMessage(
             "Passwords do not match. Please check the password and confirm password"),
         "user_password_reset_required": MessageLookupByLibrary.simpleMessage(
-            "The current user requires a password reset"),
+            "المستخدم الحالي بحاجة إلى إعادة تعيين كلمة المرور"),
         "user_phone_already_exists": MessageLookupByLibrary.simpleMessage(
             "A user with the same phone number already exists in the current project"),
         "user_phone_not_found": MessageLookupByLibrary.simpleMessage(
@@ -285,10 +285,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "user_unauthorized": MessageLookupByLibrary.simpleMessage(
             "The current user is not authorized to perform the requested action"),
         "variable_already_exists": MessageLookupByLibrary.simpleMessage(
-            "Variable with the same ID already exists in this project. Try again with a different ID"),
+            "المتغير الذي يحمل نفس المعرف موجود بالفعل في هذا المشروع. حاول مرة أخرى بمعرف مختلف"),
         "variable_not_found": MessageLookupByLibrary.simpleMessage(
-            "Variable with the requested ID could not be found"),
+            "لم يتم العثور على متغير بمعرف المطلوب"),
         "webhook_not_found": MessageLookupByLibrary.simpleMessage(
-            "Webhook with the requested ID could not be found")
+            "لم يتم العثور على Webhook باستخدام المعرف المطلوب")
       };
 }

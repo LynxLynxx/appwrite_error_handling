@@ -2,7 +2,6 @@ import 'dart:developer';
 
 import 'package:appwrite/appwrite.dart';
 import 'package:appwrite_error_handling/appwrite_error_handling.dart';
-import 'package:appwrite_error_handling/src/appwrite_failures.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart';
 

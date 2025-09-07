@@ -1,8 +1,7 @@
 import 'dart:async';
-import 'dart:developer';
 
-import 'package:flutter/material.dart';
 import 'package:appwrite_error_handling/src/gen_l10n/app_localizations.dart';
+import 'package:flutter/material.dart';
 
 /// A singleton class for handling Appwrite error localizations.
 ///
@@ -35,7 +34,8 @@ class AppwriteErrorHandling {
     streamController = StreamController<bool>();
     appLocalizations =
         await AppLocalizations.delegate.load(locale ?? Locale("en"));
-    log("AppwriteErrorHandling AppLocalizations with locale: $locale, ${appLocalizations.general_unknown}");
+    debugPrint(
+        "AppwriteErrorHandling AppLocalizations with locale: $locale, ${appLocalizations.general_unknown}");
   }
 
   /// Updates the `AppLocalizations` to use the provided [locale].
@@ -43,6 +43,7 @@ class AppwriteErrorHandling {
   /// This method can be used to change the language settings at runtime.
   Future<void> updateLanguage(Locale locale) async {
     appLocalizations = await AppLocalizations.delegate.load(locale);
-    log("AppwriteErrorHandling AppLocalizations with locale: $locale, ${appLocalizations.general_unknown}");
+    debugPrint(
+        "AppwriteErrorHandling AppLocalizations with locale: $locale, ${appLocalizations.general_unknown}");
   }
 }
